@@ -11,7 +11,9 @@ TEMPLATE = lib
 
 DEFINES += PREFERENCES_LIBRARY
 
-QMAKE_CXXFLAGS += -std=c++0x
+gcc {
+    QMAKE_CXXFLAGS += -std=c++0x
+}
 
 SOURCES += preferences.cpp \
     preference.cpp \
