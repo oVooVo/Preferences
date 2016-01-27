@@ -2,6 +2,8 @@
 #define PREFERENCEDIALOG_H
 
 #include <QDialog>
+#include "preferences_global.h"
+
 
 class Preferences;
 class Preference;
@@ -10,7 +12,7 @@ namespace Ui {
 class PreferenceDialog;
 }
 
-class PreferenceDialog : public QDialog
+class PREFERENCESSHARED_EXPORT PreferenceDialog : public QDialog
 {
     Q_OBJECT
 

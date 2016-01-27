@@ -4,9 +4,10 @@
 #include <QVariant>
 #include "interfaceoptions.h"
 #include <QFileDialog>
+#include "preferences_global.h"
 
 class QSettings;
-class Preference : public QObject
+class PREFERENCESSHARED_EXPORT Preference : public QObject
 {
     Q_OBJECT
 public:

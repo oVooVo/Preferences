@@ -1,6 +1,5 @@
 #include "filedialogwidget.h"
 #include "ui_filedialogwidget.h"
-#include <QFileDialog>
 
 FileDialogWidget::FileDialogWidget(QFileDialog::AcceptMode acceptMode, QFileDialog::FileMode fileMode, QFileDialog::Options options, QWidget *parent) :
     QWidget(parent),
