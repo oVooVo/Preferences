@@ -36,6 +36,7 @@ void FileDialogWidget::setPath(const QString &path)
     if (m_path != path)
     {
         m_path = path;
+		ui->lineEdit->setText(path);
         emit pathChanged(m_path);
     }
 }
