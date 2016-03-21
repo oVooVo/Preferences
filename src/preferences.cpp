@@ -6,6 +6,12 @@ Preferences::Preferences()
 {
 }
 
+Preferences::~Preferences()
+{
+    qDeleteAll( m_preferences );
+    m_preferences.clear();
+}
+
 void Preferences::setValue(const QString &key, const QVariant &value)
 {
     m_preferences.value(key)->setValue(value);

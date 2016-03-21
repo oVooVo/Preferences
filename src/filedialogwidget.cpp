@@ -1,6 +1,5 @@
 #include "filedialogwidget.h"
 #include "ui_filedialogwidget.h"
-#include <QFileDialog>
 
 FileDialogWidget::FileDialogWidget(QFileDialog::AcceptMode acceptMode, QFileDialog::FileMode fileMode, QFileDialog::Options options, QWidget *parent) :
     QWidget(parent),
@@ -37,6 +36,7 @@ void FileDialogWidget::setPath(const QString &path)
     if (m_path != path)
     {
         m_path = path;
+		ui->lineEdit->setText(path);
         emit pathChanged(m_path);
     }
 }
