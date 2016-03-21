@@ -1,2 +1,7 @@
 *build-*
-*.pro.user
+*.user
+*.vcxproj.vspscc
+src/Debug/
+src/GeneratedFiles/
+src/Release
+src/x64

@@ -3,12 +3,13 @@
 
 #include <QWidget>
 #include <QFileDialog>
+#include "preferences_global.h"
 
 namespace Ui {
 class FileDialogWidget;
 }
 
-class FileDialogWidget : public QWidget
+class PREFERENCESSHARED_EXPORT FileDialogWidget : public QWidget
 {
     Q_OBJECT
 

@@ -2,8 +2,9 @@
 #define INTERFACEOPTIONS_H
 
 #include <QString>
+#include "preferences_global.h"
 
-class InterfaceOptions
+class PREFERENCESSHARED_EXPORT InterfaceOptions
 {
 public:
     enum Interface { Hidden, SpinBox, LineEdit, TextEdit, FileDialog, ComboBox, CheckBox, CheckButton };
