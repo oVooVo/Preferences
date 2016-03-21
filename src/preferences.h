@@ -10,6 +10,7 @@ class PREFERENCESSHARED_EXPORT Preferences
 {
 public:
     Preferences();
+    ~Preferences();
 
     void save() const;
     void restore() const;
